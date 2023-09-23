@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Discussion Platform</title>
+</head>
+<body>
+    <header>
+        <h1>Discussion Platform</h1>
+    </header>
+
+    <main>
+        <section class="discussion">
+            <h2>Discussion Forum</h2>
+            <!-- User Authentication -->
+            <div id="auth">
+                <form id="signup-form">
+                    <h3>Sign Up</h3>
+                    <input type="text" id="signup-username" placeholder="Username">
+                    <input type="password" id="signup-password" placeholder="Password">
+                    <button type="button" onclick="signup()">Sign Up</button>
+                </form>
+                <form id="login-form">
+                    <h3>Login</h3>
+                    <input type="text" id="login-username" placeholder="Username">
+                    <input type="password" id="login-password" placeholder="Password">
+                    <button type="button" onclick="login()">Login</button>
+                </form>
+            </div>
+
+            <!-- Share Posts -->
+            <div id="share-post">
+                <h3>Share a Post</h3>
+                <textarea id="post-content" placeholder="Write your post here..."></textarea>
+                <button type="button" onclick="sharePost()">Share</button>
+            </div>
+
+            <!-- Display Posts -->
+            <ul id="post-list" class="discussion-list">
+                <!-- Posts will be displayed here -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Discussion Platform</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
