@@ -26,36 +26,34 @@
             <div class="brand">Women Discussion Plateform</div>
         </div>
         <!--SearchBox Section-->
-        <div class="search-box">
-            <div>
-                
-                <input type="text" name="q" placeholder="look a subject">
-                <button><i class="fa fa-search"></i></button>
-            </div>
-        </div>
+		<div class="search-box">
+			<div>
+				<input type="text" name="q" placeholder="Search for a post" oninput="searchPosts(this.value)">
+				<button><i class="fa fa-search"></i></button>
+			</div>
+		</div>
     <div class="container">
 
 
         <!--Topic Section-->
-        <div class="topic-container">
-
-                    <div class="comment">
-                        <button onclick="showReply()">New Post</button>
-                    </div>
-         </div>
-            </div>
-        </div>
-        <!--post area-->
-        <div class="comment-area hide" id="reply-area">
-            <textarea name="reply" id="" placeholder="Write here or ask somethink "></textarea>
-            <input type="submit" value="submit">
-        </div>
-
-
-
-        
-
-    </div>
+		<div class="topic-container" id="post-container">
+			<div class="post-box">
+				<!-- Existing content inside the post container -->
+				<div class="comment">
+					<button onclick="showReply()">New Post</button>
+				</div>
+			</div>
+		</div>
+		<!--post area-->
+		<div class="comment-area hide" id="reply-area">
+			<div class="reply-box">
+				<form onsubmit="submitPost(event)">
+					<input type="text" name="subject" id="post-subject" placeholder="Subject">
+					<textarea name="reply" id="post-content" placeholder="Write here or ask something"></textarea>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
     <footer>
         <span>&copy;  Women'platform</span>
     </footer>
