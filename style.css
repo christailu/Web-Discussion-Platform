@@ -217,6 +217,27 @@ footer {
     border: solid 1px #0056b3; /* Darker blue border on hover */
 }
 
+.post-box {
+    background-color: #fff; /* White background for the box */
+    border: 1px solid #ddd; /* Border for the box */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding inside the box */
+    margin-bottom: 20px; /* Spacing between boxes */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+.comment-area .reply-box {
+    background-color: #fff; /* White background for the box */
+    border: 1px solid #ddd; /* Border for the box */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding inside the box */
+    margin-bottom: 20px; /* Spacing between boxes */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+
+
+
 
 
 
