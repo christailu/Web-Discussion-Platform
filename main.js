@@ -76,3 +76,17 @@ function submitPost(event) {
     document.getElementById('post-subject').value = '';
     document.getElementById('post-content').value = '';
 }
+function searchPosts(query) {
+    var posts = document.querySelectorAll('.post-box');
+    
+    for (var i = 0; i < posts.length; i++) {
+        var post = posts[i];
+        var content = post.textContent || post.innerText;
+
+        if (content.includes(query)) {
+            post.style.display = 'block';
+        } else {
+            post.style.display = 'none';
+        }
+    }
+}
